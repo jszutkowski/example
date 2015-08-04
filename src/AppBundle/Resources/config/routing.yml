@@ -1,0 +1,6 @@
+app_default_email_change:
+    pattern:  /email/change/{username}
+    defaults: { _controller: AppBundle:Default:changeEmail, _format: ~ }
+    requirements:
+        _method: PUT
+        username: "[a-z0-9]+"
